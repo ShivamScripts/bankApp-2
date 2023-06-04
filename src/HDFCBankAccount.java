@@ -37,7 +37,7 @@ public class HDFCBankAccount implements BankAccount{
 
     @Override
     public Boolean withdrawMoney(int money) {
-        if(this.balance >= money){
+        if(this.balance-500 >= money){
             this.balance = this.balance - money;
             return true;
         }
